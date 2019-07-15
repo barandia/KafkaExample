@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Common.DTO;
+using Common.Kafka;
+using System;
 
 namespace Producer
 {
@@ -7,6 +9,9 @@ namespace Producer
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+
+            //IMessageProducer<WriteRequestMessage> messageProducer = WriteRequestMessageProducer.GetInstance();
+            //messageProducer.ProduceMessageAsync
         }
     }
 }
